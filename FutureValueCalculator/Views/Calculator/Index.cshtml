@@ -4,7 +4,8 @@
     ViewBag.Title = "Future Value Calculator";
 }
 
-<h2>Future Value Calculator</h2>
+<h2>Calculate Your Investments</h2>
+<h3>Using this calculator, you can check progress on your investment and make brighter desicions</h3>
 
 @using (Html.BeginForm("Index", "Calculator", FormMethod.Post))
 {
@@ -23,10 +24,12 @@
         @Html.TextBoxFor(x => x.Years, new { @class = "form-control" })
         @Html.ValidationMessageFor(m=> m.Years, "", new { @class = "text-danger" })
     </div>
+    <br />  
     <div>
         <input type="submit" value="Calculate" class="btn btn-primary" />
         <input type="reset" value="Reset" class="btn btn-danger" />
     </div>
+    <br/>
     <div>
         <label>
             Future Value: @ViewBag.FutureValue
