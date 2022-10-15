@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureValueCalculator", "FutureValueCalculator\FutureValueCalculator.csproj", "{FB735786-85AA-465A-8244-6C8865E7E2C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureValueCalculator.Tests", "FutureValueCalculator.Tests\FutureValueCalculator.Tests.csproj", "{03F35A1F-039B-466B-98F6-201E2CD715C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB735786-85AA-465A-8244-6C8865E7E2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB735786-85AA-465A-8244-6C8865E7E2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB735786-85AA-465A-8244-6C8865E7E2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB735786-85AA-465A-8244-6C8865E7E2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03F35A1F-039B-466B-98F6-201E2CD715C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F35A1F-039B-466B-98F6-201E2CD715C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F35A1F-039B-466B-98F6-201E2CD715C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F35A1F-039B-466B-98F6-201E2CD715C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41C02267-BF9A-41FA-A9E2-0321473C0CC3}
+	EndGlobalSection
+EndGlobal

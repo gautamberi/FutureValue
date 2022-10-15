@@ -1,0 +1,67 @@
+﻿@model FutureValueCalculator.Models.FutureValueModel
+
+@{
+    ViewBag.Title = "Future Value Calculator";
+}
+
+<h2>Future Value Calculator</h2>
+
+@using (Html.BeginForm("Index", "Calculator", FormMethod.Post))
+{
+    <div>
+        @Html.LabelFor(x => x.Investment)
+        @Html.TextBoxFor(x => x.Investment, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.Investment,"", new {@class = "text-danger" })
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Rate)
+        @Html.TextBoxFor(x => x.Rate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.Rate, "", new { @class = "text-danger" })
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Years)
+        @Html.TextBoxFor(x => x.Years, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=> m.Years, "", new { @class = "text-danger" })
+    </div>
+    <div>
+        <input type="submit" value="Calculate" class="btn btn-primary" />
+        <input type="reset" value="Reset" class="btn btn-danger" />
+    </div>
+    <div>
+        <label>
+            Future Value: @ViewBag.FutureValue
+        </label>
+    </div>
+    @*<div>
+        @Html.LabelFor(x => x.SomeText)
+        @Html.TextBoxFor(x => x.SomeText, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.SomeText, "", new { @class = "text-danger" })
+    </div>*@
+
+}
+
+@*<form method="post">
+    <div>
+        <label>Monthly Investment: </label>
+        <input type="text" name="Investment" class="form-control" />
+    </div>
+    <div>
+        <label>Yearly Rate: </label>
+        <input type="text" name="Rate" class="form-control" />
+    </div>
+    <div>
+        <label>Years: </label>
+        <input type="text" name="Years" class="form-control" />
+    </div>
+    <br />
+    <div>
+        <input type="submit" value="Calculate" class="btn btn-primary" />
+        <input type="reset" value="Reset" class="btn btn-danger" />
+    </div>
+    <div>
+        <label>
+
+        </label>
+    </div>
+</form>*@
+
