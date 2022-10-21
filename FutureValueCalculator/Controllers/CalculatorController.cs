@@ -10,8 +10,13 @@ namespace FutureValueCalculator.Controllers
     public class CalculatorController : Controller
     {
         // GET: Calculator
+        /// <summary>
+        /// index 
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
+
             //FutureValueModel model = new FutureValueModel();
             //ViewBag.FutureValue = 0;
             return View();
